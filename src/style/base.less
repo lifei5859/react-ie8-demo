@@ -1,11 +1,32 @@
+.between(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 #app {
   .margin-left {
     margin-left: 10px;
   }
   .temp-admin {
+    text-align: center;
     margin: 20px 15px;
     padding: 15px;
     background: #fff;
     border-radius: 10px;
+    position: relative;
+    min-width: 900px;
+    min-height: 80%;
+    //overflow: hidden;
+    &::after{
+      content: " ";
+      clear: both;
+      display: block;
+      overflow: hidden;
+      font-size: 0;
+      height: 0;
+      background-color: transparent;
+    }
   }
 }
+

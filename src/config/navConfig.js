@@ -15,7 +15,7 @@ const navConf = [
         type: 'appstore',
         children: [
             {
-                name: '考勤管理',
+                name: '考勤信息',
                 key: '/tools/checkingIn',
                 type: 'book'
             },
@@ -23,7 +23,12 @@ const navConf = [
                 name: '员工列表',
                 key: '/tools/employeeList',
                 type: 'file-text'
-            }
+            },
+            // {
+            //     name: '员工管理',
+            //     key: '/tools/management',
+            //     type: 'file-text'
+            // }
         ]
     },
     {

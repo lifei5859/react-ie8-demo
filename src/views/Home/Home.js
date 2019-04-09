@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 
-import '../../style/base.less'
 import './style.less'
 
 class Home extends Component {

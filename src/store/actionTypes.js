@@ -1,0 +1,5 @@
+export const ADD_LIST_ITEM = 'ADD_LIST_ITEM';
+export const USER_VAL_CHANGE = 'USER_VAL_CHANGE';
+export const CONTENT_VAL_CHANGE = 'CONTENT_VAL_CHANGE';
+export const REMOVE_LIST_ITEM = 'REMOVE_LIST_ITEM';
+export const COUNT_ADD = 'COUNT_ADD';

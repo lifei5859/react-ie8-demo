@@ -2,8 +2,29 @@
   .login-wrapper {
     height: 100%;
     width: 100%;
-    background-image: url("../../static/imgs/9.png");
+    background-image: url("9.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    position: relative;
+    .login-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -200px;
+      margin-left: -88px;
+      &>i{
+        font-size: 50px;
+        color: #2db7f5;
+        font-weight: bold;
+      }
+    }
+    .login-card {
+      width: 500px;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      margin-left: -250px;
+      margin-top: -100px;
+    }
   }
 }
