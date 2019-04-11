@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { Card } from 'antd'
 import './style.less'
-import { Button, Form, Input, Modal } from 'antd';
+import { Button, Form, Input, Modal } from 'antd'
 import api from '../../api'
-const confirm = Modal.confirm;
-const createForm = Form.create;
-const FormItem = Form.Item;
-function noop () {
-  return false
-}
+
+const confirm = Modal.confirm
+const createForm = Form.create
+const FormItem = Form.Item
+
 class Login extends Component {
   componentDidMount() {
     api.getUser().then(res => {
@@ -20,11 +19,11 @@ class Login extends Component {
     e.preventDefault();
     this.props.form.validateFields((errors, values) => {
       if (!!errors) {
-        console.log('Errors in form!!!');
+        console.log('Errors in form!!!')
         return;
       }
-      console.log('Submit!!!');
-      console.log(values);
+      console.log('Submit!!!')
+      console.log(values)
     });
   }
   checkPass = (rule, value, callback) => {
@@ -42,9 +41,9 @@ class Login extends Component {
         if (value.length < 5) {
           callback([new Error('用户名至少为 5 个字符')]);
         } else {
-          callback();
+          callback()
         }
-      }, 800);
+      }, 800)
     }
   }
   showConfirm = () => {
@@ -62,7 +61,7 @@ class Login extends Component {
     const {getFieldProps, getFieldError, isFieldValidating } = this.props.form
     const nameProps = getFieldProps('name', {
       rules: [
-        // { required: true, min: 5, message: '用户名至少为 5 个字符' },
+        { required: true, message: '工号不能为空' },
         { validator: this.userExists },
       ],
     });
@@ -96,7 +95,6 @@ class Login extends Component {
                 hasFeedback
             >
               <Input {...passwdProps} type="password" autoComplete="off" placeholder="请输密码"
-                     onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop}
               />
             </FormItem>
             <FormItem wrapperCol={{ span: 12, offset: 7 }}>

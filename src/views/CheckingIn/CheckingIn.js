@@ -172,17 +172,6 @@ class CheckingIn extends Component {
                   />
                   <span className="ant-form-text">天</span>
                 </FormItem>
-
-                {/*<FormItem*/}
-                    {/*label="选项"*/}
-                    {/*labelCol={{ span: 8 }}*/}
-                {/*>*/}
-                  {/*<RadioGroup {...getFieldProps('rg')}>*/}
-                    {/*<RadioButton value="a">选项一</RadioButton>*/}
-                    {/*<RadioButton value="b">选项二</RadioButton>*/}
-                    {/*<RadioButton value="c">选项三</RadioButton>*/}
-                  {/*</RadioGroup>*/}
-                {/*</FormItem>*/}
                 <FormItem
                     label="备注"
                     labelCol={{ span: 8 }}
