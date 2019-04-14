@@ -10,6 +10,9 @@ import Personal from './views/Personal/Personal'
 import CheckingIn from './views/CheckingIn/CheckingIn'
 import EmployeeList from './views/EmployeeList/EmployeeList'
 import PrivateRoute from './components/PriviteRoute/PriviteRoute'
+import HolidayRequest from './views/HolidayRequest/HolidayRequest'
+import RecordHoliday from './views/RecordHoliday/RecordHoliday'
+import AttendanceCalendar from './views/AttendanceCalendar/AttendanceCalendar'
 class MyRouter extends Component {
   componentWillMount () {
     if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE","")) < 10){
@@ -57,6 +60,9 @@ class MyRouter extends Component {
                              <Route path="/personal" component={Personal} />
                              {/*<Route path="/tools/checkingIn" component={CheckingIn} />*/}
                              <PrivateRoute path="/tools/checkingIn" component={CheckingIn}/>
+                             <Route path="/tools/holidayRequest" component={HolidayRequest}/>
+                             <Route path="/tools/recordHoliday" component={RecordHoliday}/>
+                             <Route path="/tools/attendanceCalendar" component={AttendanceCalendar}/>
                              <Route path="/tools/employeeList" component={EmployeeList} />
                              <Redirect to="/home" />
                          </Switch>

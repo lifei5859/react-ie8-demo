@@ -1,6 +1,7 @@
 {
   "name": "react-ie8-app",
   "version": "0.1.0",
+  "proxy": "http://127.0.0.1:12306",
   "private": true,
   "dependencies": {
     "@babel/core": "7.2.2",
@@ -46,6 +47,7 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.5.0",
     "postcss-safe-parser": "4.0.1",
+    "proxy": "^0.2.4",
     "react": "^16.8.6",
     "react-app-polyfill": "^0.2.2",
     "react-dev-utils": "^8.0.0",

@@ -2,7 +2,11 @@ import axios from './axios'
 
 const api = {
     getUser (params) {
-       return axios.get('/static/json/user.json', params)
+        console.log(params)
+        return axios.get('/users', params)
+    },
+    userLogin (params) {
+        return axios.post('users/login', params)
     }
 }
 
